@@ -33,12 +33,12 @@ python -m torch.distributed.launch --nproc_per_node $GPUS_PER_NODE --nnodes $NNO
 
 ```
 usage: AD-SGD.py [-h] [--local_rank LOCAL_RANK] [--lr LR]
-                [--delay_type DELAY_TYPE] [--scheduler SCHEDULER]
-                [--batchsize BATCHSIZE]
-                [--topo {ring,bipartite,star,complete}]
-                [--lr_interval LR_INTERVAL] [--epoch EPOCH] [--seed SEED]
-                [--model {resnet,vgg,mnistnet,linearnet}]
-                [--dataset {cifar10,tiny-imagenet,cifar100,mnist}]
+                 [--delay_type DELAY_TYPE] [--scheduler SCHEDULER]
+                 [--batchsize BATCHSIZE]
+                 [--topo {ring,bipartite,star,complete}]
+                 [--lr_interval LR_INTERVAL] [--epoch EPOCH] [--seed SEED]
+                 [--model {resnet,vgg,mnistnet,linearnet}]
+                 [--dataset {cifar10,tiny-imagenet,cifar100,mnist}]
 
 optional arguments:
   -h, --help            show this help message and exit
